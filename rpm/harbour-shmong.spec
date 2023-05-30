@@ -46,6 +46,12 @@ rm -rf %{buildroot}
 # >> install pre
 # << install pre
 
+install -d %{buildroot}%{_datadir}/%{name}
+install -d %{buildroot}%{_datadir}/%{name}/qml
+install -d %{buildroot}%{_datadir}/%{name}/icons
+install -d %{buildroot}%{_datadir}/%{name}/translations
+install -d %{buildroot}%{_datadir}/lipstick/notificationcategories
+
 %qmake5_install
 
 # >> install post
@@ -65,7 +71,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/lipstick/notificationcategories/%{name}-message.conf
 %{_datadir}/%{name}/qml
-%{_datadir}/%{name}/icons
 %{_datadir}/%{name}/translations
 %{_datadir}/icons/hicolor/86x86/apps
 %{_bindir}/%{name}
