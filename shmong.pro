@@ -135,13 +135,15 @@ lupdate_only {
 
 SAILFISHAPP_ICONS += 86x86 
 
-OTHER_FILES += qml* \
-               qml/pages/* \
-               qml/cover/* \
-               qml/image/* \
-               harbour-shmong.desktop \
-               harbour-shmong-message.conf \
+OTHER_FILES += resources/icons/86x86/* \
+                resources/qml* \
+               resources/qml/pages/* \
+               resources/qml/cover/* \
+               resources/qml/image/* \
+               resources/harbour-shmong.desktop \
+               resources/harbour-shmong-message.conf \
 
+SAILFISHAPP_ICONS += 86x86 
 
 
 TRANSLATIONS = resources/translations/de_DE.ts \
