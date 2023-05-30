@@ -52,7 +52,7 @@ install -d %{buildroot}%{_datadir}/%{name}/icons
 install -d %{buildroot}%{_datadir}/%{name}/translations
 install -d %{buildroot}%{_datadir}/lipstick
 install -d %{buildroot}%{_datadir}/lipstick/notificationcategories
-install -p %{_sourcedir}/../%{name}-message.conf %{buildroot}%{_datadir}/lipstick/notificationcategories/%{name}-message.conf
+install -p %{name}-message.conf %{buildroot}%{_datadir}/lipstick/notificationcategories/%{name}-message.conf
 
 %qmake5_install
 
