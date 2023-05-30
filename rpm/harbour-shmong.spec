@@ -19,7 +19,7 @@ BuildRequires:  openssl-devel
 BuildRequires:  libgpg-error-devel
 BuildRequires:  libgcrypt-devel
 BuildRequires:  sqlite-devel
-BuildRequiers:  libqxmpp-devel
+BuildRequires:  libqxmpp-devel
 Requires:       libqxmpp
 
 %description
