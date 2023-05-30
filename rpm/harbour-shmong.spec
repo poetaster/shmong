@@ -15,6 +15,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  pkgconfig(Qt5Xml)
 BuildRequires:	pkgconfig(sailfishapp) >= 1.0.2
+
 BuildRequires:  libiphb-devel
 BuildRequires:  libxml2-devel
 BuildRequires:  openssl-devel
@@ -25,7 +26,7 @@ BuildRequires:  libqxmpp-devel
 
 Requires:   sailfishsilica-qt5
 Requires:   qt5-qtdeclarative-import-xmllistmodel
-Requires:       libqxmpp
+Requires:   libqxmpp
 
 %description
 XMPP Client for Sailfish OS

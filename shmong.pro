@@ -11,7 +11,7 @@ contains(DEFINES, DBUS) {
     CONFIG += console
     QT += dbus
 }
-
+INCLUDEPATH += /usr/include/QXmppQt5
 INCLUDEPATH += source
 INCLUDEPATH += source/persistence
 INCLUDEPATH += source/xep/httpFileUpload
