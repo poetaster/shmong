@@ -50,6 +50,7 @@ install -d %{buildroot}%{_datadir}/%{name}
 install -d %{buildroot}%{_datadir}/%{name}/qml
 install -d %{buildroot}%{_datadir}/%{name}/icons
 install -d %{buildroot}%{_datadir}/%{name}/translations
+install -d %{buildroot}%{_datadir}/lipstick
 install -d %{buildroot}%{_datadir}/lipstick/notificationcategories
 
 %qmake5_install
