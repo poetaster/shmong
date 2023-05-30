@@ -133,6 +133,17 @@ lupdate_only {
            resources/qml/pages/*.qml
 }
 
+SAILFISHAPP_ICONS += 86x86 
+
+OTHER_FILES += qml* \
+               qml/pages/* \
+               qml/cover/* \
+               qml/image/* \
+               harbour-shmong.desktop \
+               harbour-shmong-message.conf \
+
+
+
 TRANSLATIONS = resources/translations/de_DE.ts \
                resources/translations/en_GB.ts \
                resources/translations/es_BO.ts \
