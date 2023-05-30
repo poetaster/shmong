@@ -9,10 +9,12 @@ URL: https://github.com/ron282/shmong
 Source0: %{name}-%{version}.tar.bz2
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
-BuildRequires:	pkgconfig(sailfishapp) >= 1.0.2
-BuildRequires:  pkgconfig(Qt5Quick)
-BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Qml)
+BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  pkgconfig(Qt5Concurrent)
+BuildRequires:  pkgconfig(Qt5Xml)
+BuildRequires:	pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  libiphb-devel
 BuildRequires:  libxml2-devel
 BuildRequires:  openssl-devel
@@ -20,6 +22,9 @@ BuildRequires:  libgpg-error-devel
 BuildRequires:  libgcrypt-devel
 BuildRequires:  sqlite-devel
 BuildRequires:  libqxmpp-devel
+
+Requires:   sailfishsilica-qt5
+Requires:   qt5-qtdeclarative-import-xmllistmodel
 Requires:       libqxmpp
 
 %description
