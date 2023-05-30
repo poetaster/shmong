@@ -6,6 +6,7 @@ TEMPLATE = app
 QT += sql xml concurrent
 
 LBUILD = build
+DEFINES += SFOS
 
 contains(DEFINES, DBUS) {
     CONFIG += console
