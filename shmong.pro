@@ -12,11 +12,6 @@ contains(DEFINES, DBUS) {
     QT += dbus
 }
 
-INCLUDEPATH += /usr/include/QXmppQt5
-INCLUDEPATH += /usr/include/QXmppQt5/Omemo
-INCLUDEPATH += /usr/include/QXmppQt5/base
-INCLUDEPATH += /usr/include/QXmppQt5/client
-
 INCLUDEPATH += source
 INCLUDEPATH += source/persistence
 INCLUDEPATH += source/xep/httpFileUpload
