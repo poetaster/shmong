@@ -1,5 +1,7 @@
 TARGET = harbour-shmong
 
+CONFIG += sailfishapp
+
 TEMPLATE = app
 QT += qml quick core sql xml concurrent
 
