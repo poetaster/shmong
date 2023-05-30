@@ -45,7 +45,22 @@ make %{?_smp_mflags}
 rm -rf %{buildroot}
 # >> install pre
 # << install pre
-%qmake5_install
+
+install -d %{buildroot}%{_bindir}
+install -p -m 0755 %(pwd)/%{name} %{buildroot}%{_bindir}/%{name}
+install -d %{buildroot}%{_datadir}/applications
+install -d %{buildroot}%{_datadir}/lipstick/notificationcategories
+install -d %{buildroot}%{_datadir}/%{name}
+install -d %{buildroot}%{_datadir}/%{name}/qml
+install -d %{buildroot}%{_datadir}/%{name}/icons
+install -d %{buildroot}%{_datadir}/%{name}/translations
+cp -Ra %{_sourcedir}/../resources/qml/* %{buildroot}%{_datadir}/%{name}/qml
+cp -Ra %{_sourcedir}/../resources/icons/* %{buildroot}%{_datadir}/%{name}/icons
+cp -Ra %{_sourcedir}/../resources/translations/*.qm %{buildroot}%{_datadir}/%{name}/translations
+install -d %{buildroot}%{_datadir}/icons/hicolor/86x86/apps
+install -m 0444 -t %{buildroot}%{_datadir}/icons/hicolor/86x86/apps/ %{_sourcedir}/../resources/icons/86x86/%{name}.png
+install -p %{_sourcedir}/../resources/%{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
+install -p %{_sourcedir}/../resources/%{name}-message.conf %{buildroot}%{_datadir}/lipstick/notificationcategories/%{name}-message.conf
 
 # >> install post
 # << install post
@@ -68,6 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/translations
 %{_datadir}/icons/hicolor/86x86/apps
 %{_bindir}/%{name}
+
 # >> files
 # << files
 
