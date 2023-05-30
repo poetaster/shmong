@@ -1,1 +1,12 @@
-resources/harbour-shmong.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+X-Nemo-Application-Type=generic
+Name=Shmong
+Icon=harbour-shmong
+Exec=harbour-shmong
+
+[X-Sailjail]
+Permissions=Internet;UserDirs;RemovableMedia;MediaIndexing
+ApplicationName=Shmong

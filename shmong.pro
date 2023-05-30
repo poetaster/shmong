@@ -128,33 +128,32 @@ HEADERS += source/base/Shmong.h \
     source/base/XmppClient.h
 
 lupdate_only {
-        SOURCES += resources/qml/*.qml \
-           resources/qml/cover/*.qml \
-           resources/qml/pages/*.qml
+        SOURCES += qml/*.qml \
+           qml/cover/*.qml \
+           qml/pages/*.qml
 }
 
+
+OTHER_FILES +=  \
+               qml* \
+               qml/pages/* \
+               qml/cover/* \
+               qml/image/* \
+               harbour-shmong.desktop \
+               harbour-shmong-message.conf \
+
 SAILFISHAPP_ICONS += 86x86 
 
-OTHER_FILES += resources/icons/86x86/* \
-                resources/qml* \
-               resources/qml/pages/* \
-               resources/qml/cover/* \
-               resources/qml/image/* \
-               resources/harbour-shmong.desktop \
-               resources/harbour-shmong-message.conf \
 
-SAILFISHAPP_ICONS += 86x86 
-
-
-TRANSLATIONS = resources/translations/de_DE.ts \
-               resources/translations/en_GB.ts \
-               resources/translations/es_BO.ts \
-               resources/translations/fr_FR.ts \
-               resources/translations/hr-HR.ts \
-               resources/translations/nb_NO.ts \
-               resources/translations/nl.ts \
-               resources/translations/sv_SE.ts \
-               resources/translations/zh_CN.ts
+TRANSLATIONS = translations/de_DE.ts \
+               translations/en_GB.ts \
+               translations/es_BO.ts \
+               translations/fr_FR.ts \
+               translations/hr-HR.ts \
+               translations/nb_NO.ts \
+               translations/nl.ts \
+               translations/sv_SE.ts \
+               translations/zh_CN.ts
 
 RESOURCES += shmoose.qrc
 
